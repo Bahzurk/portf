@@ -1,5 +1,6 @@
-import { Box, Card, CardContent, Typography, Avatar } from '@mui/material';
+import { Box, Card, CardContent, Typography, Avatar, Button } from '@mui/material';
 import { blue } from '@mui/material/colors';
+import { Link } from 'react-router-dom';
 
 function AboutPage() {
   return (
@@ -13,10 +14,19 @@ function AboutPage() {
             About Me
           </Typography>
           <Typography variant="body1" paragraph>
-          I’m a <strong>front-end developer</strong> passionate about creating responsive, user-friendly websites using <strong>React</strong>, <strong>Material UI</strong>, and modern web technologies. With a strong background in <strong>UX/UI design</strong> from Miami University, I focus on building seamless, intuitive experiences that prioritize <strong>both</strong> functionality and design.
+            I’m a <strong>front-end developer</strong> passionate about creating responsive, user-friendly websites using <strong>React</strong>, <strong>Material UI</strong>, and modern web technologies. With a strong background in <strong>UX/UI design</strong> from Miami University, I focus on building seamless, intuitive experiences that prioritize <strong>both</strong> functionality and design.
 
-Currently, I’m focused on front-end development but am eager to expand into <strong>IT</strong> and <strong>cybersecurity</strong>. I’m also working to improve my <strong>Russian</strong>, which I see as a valuable asset for future global opportunities.
+            Currently, I’m focused on front-end development but am eager to expand into <strong>IT</strong> and <strong>cybersecurity</strong>. I’m also working to improve my <strong>Russian</strong>, which I see as a valuable asset for future global opportunities.
           </Typography>
+          <Button 
+            variant="contained" 
+            color="primary" 
+            component={Link} 
+            to="/projects" 
+            sx={{ mt: 3 }}
+          >
+            View My Projects
+          </Button>
         </CardContent>
       </Card>
     </Box>
