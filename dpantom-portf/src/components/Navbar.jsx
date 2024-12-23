@@ -7,7 +7,7 @@ function Navbar() {
     <AppBar position="sticky" color="primary">
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          My Portfolio
+          Michael Szurko
         </Typography>
         <Button color="inherit" component={Link} to="/">Home</Button>
         <Button color="inherit" component={Link} to="/about">About</Button>
