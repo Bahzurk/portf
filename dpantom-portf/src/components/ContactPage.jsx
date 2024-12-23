@@ -1,26 +1,33 @@
-// /components/ContactPage.jsx
 import { Box, TextField, Button, Typography } from '@mui/material';
 
 function ContactPage() {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', p: 3 }}>
+    <Box sx={{ 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center', 
+      justifyContent: 'center', 
+      minHeight: '100vh', 
+      p: 3 
+    }}>
       <Typography variant="h3" gutterBottom>
         Contact Me
       </Typography>
-      <form noValidate autoComplete="off">
+      
+      <form noValidate autoComplete="off" style={{ width: '100%', maxWidth: 500 }}>
         <TextField
           label="Your Name"
           variant="outlined"
           fullWidth
           margin="normal"
-          sx={{ maxWidth: 500 }}
+          sx={{ mb: 2 }} // Adds margin-bottom to space out the fields
         />
         <TextField
           label="Your Email"
           variant="outlined"
           fullWidth
           margin="normal"
-          sx={{ maxWidth: 500 }}
+          sx={{ mb: 2 }} // Adds margin-bottom to space out the fields
         />
         <TextField
           label="Your Message"
@@ -29,9 +36,14 @@ function ContactPage() {
           multiline
           rows={4}
           margin="normal"
-          sx={{ maxWidth: 500 }}
+          sx={{ mb: 3 }} // Adds margin-bottom to space out the fields
         />
-        <Button variant="contained" color="primary" type="submit">
+        <Button 
+          variant="contained" 
+          color="primary" 
+          type="submit" 
+          sx={{ mt: 2 }} // Adds margin-top to space out the button from the message field
+        >
           Send Message
         </Button>
       </form>
