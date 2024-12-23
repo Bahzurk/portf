@@ -1,52 +1,73 @@
-import { Box, TextField, Button, Typography } from '@mui/material';
+import { Box, TextField, Button, Typography, Paper } from '@mui/material';
 
 function ContactPage() {
   return (
-    <Box sx={{ 
-      display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center', 
-      justifyContent: 'center', 
-      minHeight: '100vh', 
-      p: 3 
-    }}>
-      <Typography variant="h3" gutterBottom>
+    <Box 
+      sx={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        minHeight: '100vh', 
+        p: 3, 
+        backgroundColor: '#f5f5f5' 
+      }}
+    >
+      <Typography 
+        variant="h3" 
+        gutterBottom
+        sx={{ color: '#333', fontWeight: 'bold', textAlign: 'center' }} 
+      >
         Contact Me
       </Typography>
-      
-      <form noValidate autoComplete="off" style={{ width: '100%', maxWidth: 500 }}>
-        <TextField
-          label="Your Name"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          sx={{ mb: 2 }} // Adds margin-bottom to space out the fields
-        />
-        <TextField
-          label="Your Email"
-          variant="outlined"
-          fullWidth
-          margin="normal"
-          sx={{ mb: 2 }} // Adds margin-bottom to space out the fields
-        />
-        <TextField
-          label="Your Message"
-          variant="outlined"
-          fullWidth
-          multiline
-          rows={4}
-          margin="normal"
-          sx={{ mb: 3 }} // Adds margin-bottom to space out the fields
-        />
-        <Button 
-          variant="contained" 
-          color="primary" 
-          type="submit" 
-          sx={{ mt: 2 }} // Adds margin-top to space out the button from the message field
-        >
-          Send Message
-        </Button>
-      </form>
+
+      <Paper 
+        elevation={3} 
+        sx={{
+          p: { xs: 2, sm: 4 }, 
+          width: '100%',
+          maxWidth: 600, 
+          backgroundColor: '#fff', 
+          borderRadius: 2,
+        }}
+      >
+        <form noValidate autoComplete="off" style={{ width: '100%' }}>
+          <TextField
+            label="Your Name"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            sx={{ mb: 2 }} 
+          />
+          <TextField
+            label="Your Email"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            sx={{ mb: 2 }} 
+          />
+          <TextField
+            label="Your Message"
+            variant="outlined"
+            fullWidth
+            multiline
+            rows={4}
+            margin="normal"
+            sx={{ mb: 3 }} 
+          />
+          <Button 
+            variant="contained" 
+            color="primary" 
+            type="submit" 
+            sx={{ 
+              mt: 2, 
+              width: '100%' 
+            }}
+          >
+            Send Message
+          </Button>
+        </form>
+      </Paper>
     </Box>
   );
 }
