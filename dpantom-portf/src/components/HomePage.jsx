@@ -12,7 +12,8 @@ function HomePage() {
         justifyContent: 'center', 
         minHeight: '100vh', 
         textAlign: 'center', 
-        bgcolor: 'background.default', 
+        bgcolor: 'background.default',
+        color: 'text.primary', 
         p: 2
       }}
     >
