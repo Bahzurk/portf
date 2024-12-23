@@ -25,9 +25,15 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;  /* Align children (Navbar, content) in a column */
   min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;  /* Ensure the body takes full viewport height */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;  /* Ensure the root container takes the full height */
 }
 
 h1 {
