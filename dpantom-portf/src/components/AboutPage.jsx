@@ -1,8 +1,13 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { Box, Card, CardContent, Typography, Avatar, Button } from '@mui/material';
 import { blue } from '@mui/material/colors';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; 
 
 function AboutPage() {
+  const { t } = useTranslation();  
+
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', p: 3 }}>
       <Card sx={{ maxWidth: 500, textAlign: 'center' }}>
@@ -11,12 +16,23 @@ function AboutPage() {
             M
           </Avatar>
           <Typography variant="h4" gutterBottom>
-            About Me
+            {t('about.title')}  {/* Translated 'About Me' title */}
           </Typography>
           <Typography variant="body1" paragraph>
-            I’m a <strong>front-end developer</strong> passionate about creating responsive, user-friendly websites using <strong>React</strong>, <strong>Material UI</strong>, and modern web technologies. With a strong background in <strong>UX/UI design</strong> from Miami University, I focus on building seamless, intuitive experiences that prioritize <strong>both</strong> functionality and design.
-
-            Currently, I’m focused on front-end development but am eager to expand into <strong>IT</strong> and <strong>cybersecurity</strong>. I’m also working to improve my <strong>Russian</strong>, which I see as a valuable asset for future global opportunities.
+            {t('about.intro')}
+            <strong>{t('about.role')}</strong> {/* Translated job role */}
+            {t('about.technologies')}
+            <strong>{t('about.tools.react')}</strong>, 
+            <strong>{t('about.tools.materialUI')}</strong>, 
+            <strong>{t('about.tools.modernTech')}</strong>.
+            {t('about.expertise')}
+            <strong>{t('about.field')}</strong>
+            {t('about.education.school')}, {t('about.education.focus')}
+          </Typography>
+          <Typography variant="body1" paragraph>
+            {t('about.languages.currentFocus')}
+            <strong>{t('about.languages.futureGoals')}</strong>
+            {t('about.languages.languageSkills')}
           </Typography>
           <Button 
             variant="contained" 
@@ -25,7 +41,7 @@ function AboutPage() {
             to="/projects" 
             sx={{ mt: 3 }}
           >
-            View My Projects
+            {t('about.cta.buttonText')}  {/* Translated button text */}
           </Button>
         </CardContent>
       </Card>

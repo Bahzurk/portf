@@ -4,9 +4,33 @@
       "description": "I'm a passionate developer showcasing my work. Explore my projects and learn more about me.",
       "learnMore": "Learn More About Me"
     },
+
     "about": {
-      "description": "This is the about page"
-    },
+        "title": "About Me",
+        "intro": "I’m a",
+        "role": " front-end developer",
+        "technologies": "passionate about creating responsive, user-friendly websites using",
+        "tools": {
+            "react": " React",
+            "materialUI": " Material UI",
+            "modernTech": " modern web technologies"
+        },
+        "expertise": "With a strong background in",
+        "field": " UX/UI design",
+        "education": {
+        "school": " from Miami University",
+        "focus": "I focus on building seamless, intuitive experiences that prioritize both functionality and design."
+        },
+        "languages": {
+            "currentFocus": "Currently, I’m focused on front-end development but am eager to expand into",
+            "futureGoals": " IT and Cybersecurity",
+            "languageSkills": ". I’m also working to improve my Russian, which I see as a valuable asset for future global opportunities."
+        },
+        "cta": {
+            "buttonText": "View My Projects"
+        }
+    },   
+      
     "contact": {
       "email": "Contact us at: email@example.com"
     },
