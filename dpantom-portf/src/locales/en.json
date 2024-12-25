@@ -35,7 +35,9 @@
       "email": "Contact us at: email@example.com"
     },
     "notFound": {
-      "message": "Page not found"
+      "title": "404 - Page Not Found",
+      "message": "The page you're looking for does not exist.",
+      "returnHome": "Go to Home"
     },
     "projects": {
       "title": "Our Projects"
