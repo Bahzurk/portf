@@ -1,6 +1,11 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { Box, TextField, Button, Typography, Paper } from '@mui/material';
+import { useTranslation } from 'react-i18next';  // Import the useTranslation hook
 
 function ContactPage() {
+  const { t } = useTranslation();  // Initialize the translation hook
+
   return (
     <Box 
       sx={{ 
@@ -18,7 +23,7 @@ function ContactPage() {
         gutterBottom
         sx={{ color: '#333', fontWeight: 'bold', textAlign: 'center' }} 
       >
-        Contact Me
+        {t('contact.title')}  {/* Translated title */}
       </Typography>
 
       <Paper 
@@ -33,21 +38,21 @@ function ContactPage() {
       >
         <form noValidate autoComplete="off" style={{ width: '100%' }}>
           <TextField
-            label="Your Name"
+            label={t('contact.nameLabel')}  // Translated 'Your Name' label
             variant="outlined"
             fullWidth
             margin="normal"
             sx={{ mb: 2 }} 
           />
           <TextField
-            label="Your Email"
+            label={t('contact.emailLabel')}  // Translated 'Your Email' label
             variant="outlined"
             fullWidth
             margin="normal"
             sx={{ mb: 2 }} 
           />
           <TextField
-            label="Your Message"
+            label={t('contact.messageLabel')}  // Translated 'Your Message' label
             variant="outlined"
             fullWidth
             multiline
@@ -64,7 +69,7 @@ function ContactPage() {
               width: '100%' 
             }}
           >
-            Send Message
+            {t('contact.buttonText')}
           </Button>
         </form>
       </Paper>

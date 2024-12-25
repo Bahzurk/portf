@@ -32,13 +32,19 @@
     },   
       
     "contact": {
-      "email": "Contact us at: email@example.com"
+      "title": "Contact Me",
+      "nameLabel": "Your Name",
+      "emailLabel": "Your Email",
+      "messageLabel": "Your Message",
+      "buttonText": "Send Message"
     },
+
     "notFound": {
       "title": "404 - Page Not Found",
       "message": "The page you're looking for does not exist.",
       "returnHome": "Go to Home"
     },
+
     "projects": {
       "title": "Our Projects"
     }
