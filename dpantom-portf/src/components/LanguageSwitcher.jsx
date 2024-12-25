@@ -14,10 +14,10 @@ const LanguageSwitcher = () => {
     <div>
       {/* Language buttons */}
       <Button color="inherit" onClick={() => changeLanguage('en')}>
-        English
+        EN
       </Button>
       <Button color="inherit" onClick={() => changeLanguage('ru')}>
-        Русский
+        РУ
       </Button>
     </div>
   );
