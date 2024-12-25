@@ -1,8 +1,11 @@
-// /components/HomePage.jsx
+import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';  // Importing the useTranslation hook
 
 function HomePage() {
+  const { t } = useTranslation();  
+
   return (
     <Box 
       sx={{
@@ -18,13 +21,13 @@ function HomePage() {
       }}
     >
       <Typography variant="h2" component="h1" gutterBottom>
-        Welcome to My Portfolio
+        {t('homepage.welcome')}  {/* Translated welcome text */}
       </Typography>
       <Typography variant="body1" paragraph>
-        I'm a passionate developer showcasing my work. Explore my projects and learn more about me.
+        {t('homepage.description')}  {/* Translated description */}
       </Typography>
       <Button variant="contained" color="primary" component={Link} to="/about">
-        Learn More About Me
+        {t('homepage.learnMore')}  {/* Translated button text */}
       </Button>
     </Box>
   );

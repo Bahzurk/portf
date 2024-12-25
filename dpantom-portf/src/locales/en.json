@@ -1,0 +1,20 @@
+{
+    "homepage": {
+      "welcome": "Welcome to My Portfolio",
+      "description": "I'm a passionate developer showcasing my work. Explore my projects and learn more about me.",
+      "learnMore": "Learn More About Me"
+    },
+    "about": {
+      "description": "This is the about page"
+    },
+    "contact": {
+      "email": "Contact us at: email@example.com"
+    },
+    "notFound": {
+      "message": "Page not found"
+    },
+    "projects": {
+      "title": "Our Projects"
+    }
+  }
+  

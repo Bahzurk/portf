@@ -1,6 +1,6 @@
-// /components/Navbar.jsx
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Button, Typography } from '@mui/material';
+import LanguageSwitcher from './LanguageSwitcher';  // Import the LanguageSwitcher component
 
 function Navbar() {
   return (
@@ -9,10 +9,20 @@ function Navbar() {
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           Michael Szurko
         </Typography>
-        <Button color="inherit" component={Link} to="/">Home</Button>
-        <Button color="inherit" component={Link} to="/about">About</Button>
-        <Button color="inherit" component={Link} to="/projects">Projects</Button>
-        <Button color="inherit" component={Link} to="/contact">Contact</Button>
+        <Button color="inherit" component={Link} to="/">
+          Home
+        </Button>
+        <Button color="inherit" component={Link} to="/about">
+          About
+        </Button>
+        <Button color="inherit" component={Link} to="/projects">
+          Projects
+        </Button>
+        <Button color="inherit" component={Link} to="/contact">
+          Contact
+        </Button>
+
+        <LanguageSwitcher />
       </Toolbar>
     </AppBar>
   );
