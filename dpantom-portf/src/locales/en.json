@@ -57,6 +57,15 @@
         "project3Description": "Description for project 3",
         "project4": "Project 4",
         "project4Description": "Description for project 4"
-    }   
-  }
+    },   
+
+    "navbar": {
+        "title": "Michael Szurko",
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    }
+      
+}
   

@@ -57,7 +57,16 @@
           "project3Description": "Описание для проекта 3",
           "project4": "Проект 4",
           "project4Description": "Описание для проекта 4"
-        }
+    },
+
+    "navbar": {
+        "title": "Михаил Шурко",
+        "home": "Главная",
+        "about": "Обо мне",
+        "projects": "Проекты",
+        "contact": "Контакты"
+    }
+      
       
   }
   
