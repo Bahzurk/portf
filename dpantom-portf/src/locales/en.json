@@ -46,7 +46,17 @@
     },
 
     "projects": {
-      "title": "Our Projects"
-    }
+        "title": "My Projects",
+        "viewProject": "View Project",
+        "noProjects": "No projects available.",
+        "project1": "Project 1",
+        "project1Description": "Description for project 1",
+        "project2": "Project 2",
+        "project2Description": "Description for project 2",
+        "project3": "Project 3",
+        "project3Description": "Description for project 3",
+        "project4": "Project 4",
+        "project4Description": "Description for project 4"
+    }   
   }
   

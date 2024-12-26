@@ -1,35 +1,38 @@
 import { Box, Grid, Card, CardContent, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; // Importing the useTranslation hook
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description for project 1',
+    title: 'projects.project1', // Translation key for project title
+    description: 'projects.project1Description', // Translation key for project description
     link: '/projects/project-1',
   },
   {
-    title: 'Project 2',
-    description: 'Description for project 2',
+    title: 'projects.project2',
+    description: 'projects.project2Description',
     link: '/projects/project-2',
   },
   {
-    title: 'Project 3',
-    description: 'Description for project 3',
+    title: 'projects.project3',
+    description: 'projects.project3Description',
     link: '/projects/project-3',
   },
   {
-    title: 'Project 4',
-    description: 'Description for project 4',
+    title: 'projects.project4',
+    description: 'projects.project4Description',
     link: '/projects/project-4',
   },
   // Add more projects here
 ];
 
 function ProjectsPage() {
+  const { t } = useTranslation();  // Initialize the translation hook
+
   return (
     <Box sx={{ p: 3 }}>
       <Typography variant="h3" gutterBottom align="center">
-        My Projects
+        {t('projects.title')}  {/* Translated page title */}
       </Typography>
       <Grid container spacing={4}>
         {projects.length > 0 ? (
@@ -38,10 +41,10 @@ function ProjectsPage() {
               <Card sx={{ height: '100%' }}>
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
-                    {project.title}
+                    {t(project.title)}  {/* Translated project title */}
                   </Typography>
                   <Typography variant="body2" paragraph>
-                    {project.description}
+                    {t(project.description)}  {/* Translated project description */}
                   </Typography>
                   <Button
                     variant="contained"
@@ -50,7 +53,7 @@ function ProjectsPage() {
                     to={project.link}
                     fullWidth // Optional: makes button fill entire width of card
                   >
-                    View Project
+                    {t('projects.viewProject')}  {/* Translated button text */}
                   </Button>
                 </CardContent>
               </Card>
@@ -58,7 +61,7 @@ function ProjectsPage() {
           ))
         ) : (
           <Typography variant="h6" color="textSecondary" align="center" fullWidth>
-            No projects available.
+            {t('projects.noProjects')}  {/* Translated text for no projects */}
           </Typography>
         )}
       </Grid>

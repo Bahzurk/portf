@@ -46,7 +46,18 @@
     },
 
     "projects": {
-      "title": "Наши проекты"
-    }
+      "title": "Мои проекты",
+          "viewProject": "Посмотреть проект",
+          "noProjects": "Проектов нет.",
+          "project1": "Проект 1",
+          "project1Description": "Описание для проекта 1",
+          "project2": "Проект 2",
+          "project2Description": "Описание для проекта 2",
+          "project3": "Проект 3",
+          "project3Description": "Описание для проекта 3",
+          "project4": "Проект 4",
+          "project4Description": "Описание для проекта 4"
+        }
+      
   }
   

@@ -18,44 +18,49 @@ function Navbar() {
   return (
     <AppBar position="sticky" color="primary">
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        {/* On Mobile, Move Hamburger to the Left */}
+        {isMobile ? (
+          <IconButton
+            edge="start"
+            color="inherit"
+            onClick={() => toggleDrawer(true)} // Open the drawer
+            aria-label="menu"
+            sx={{ position: 'absolute', left: 16 }} // Position the hamburger menu to the left
+          >
+            <MenuIcon />
+          </IconButton>
+        ) : (
+          <Box sx={{ flexGrow: 1 }} /> // On desktop, take up space to center the name
+        )}
+
+        {/* Center the Name on Desktop */}
+        <Typography variant="h6" sx={{ flexGrow: 1, textAlign: isMobile ? 'right' : 'center' }}>
           Michael Szurko
         </Typography>
 
         {/* Show Hamburger Menu Icon on Mobile */}
         {isMobile ? (
-          <>
-            <IconButton
-              edge="end"
-              color="inherit"
-              onClick={() => toggleDrawer(true)} // Open the drawer
-              aria-label="menu"
-            >
-              <MenuIcon />
-            </IconButton>
-
-            {/* Drawer for Mobile */}
-            <Drawer
-              anchor="right"
-              open={drawerOpen}
-              onClose={() => toggleDrawer(false)} // Close the drawer
-            >
-              <List>
-                <ListItem button component={Link} to="/" onClick={() => toggleDrawer(false)}>
-                  <ListItemText primary="Home" />
-                </ListItem>
-                <ListItem button component={Link} to="/about" onClick={() => toggleDrawer(false)}>
-                  <ListItemText primary="About" />
-                </ListItem>
-                <ListItem button component={Link} to="/projects" onClick={() => toggleDrawer(false)}>
-                  <ListItemText primary="Projects" />
-                </ListItem>
-                <ListItem button component={Link} to="/contact" onClick={() => toggleDrawer(false)}>
-                  <ListItemText primary="Contact" />
-                </ListItem>
-              </List>
-            </Drawer>
-          </>
+          // Drawer for Mobile
+          <Drawer
+            anchor="left" // Move drawer to the left for better UX
+            open={drawerOpen}
+            onClose={() => toggleDrawer(false)} // Close the drawer
+          >
+            <List>
+              <ListItem button component={Link} to="/" onClick={() => toggleDrawer(false)}>
+                <ListItemText primary="Home" />
+              </ListItem>
+              <ListItem button component={Link} to="/about" onClick={() => toggleDrawer(false)}>
+                <ListItemText primary="About" />
+              </ListItem>
+              <ListItem button component={Link} to="/projects" onClick={() => toggleDrawer(false)}>
+                <ListItemText primary="Projects" />
+              </ListItem>
+              <ListItem button component={Link} to="/contact" onClick={() => toggleDrawer(false)}>
+                <ListItemText primary="Contact" />
+              </ListItem>
+            </List>
+          </Drawer>
         ) : (
           // Show horizontal nav on desktop
           <Box sx={{ display: 'flex', gap: 2 }}>
