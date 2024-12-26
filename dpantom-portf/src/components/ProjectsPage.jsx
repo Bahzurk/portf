@@ -12,6 +12,16 @@ const projects = [
     description: 'Description for project 2',
     link: '/projects/project-2',
   },
+  {
+    title: 'Project 3',
+    description: 'Description for project 3',
+    link: '/projects/project-3',
+  },
+  {
+    title: 'Project 4',
+    description: 'Description for project 4',
+    link: '/projects/project-4',
+  },
   // Add more projects here
 ];
 

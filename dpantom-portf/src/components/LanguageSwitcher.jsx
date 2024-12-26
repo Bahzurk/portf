@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
-import Flag from 'react-world-flags';  // Import the react-world-flags library
+import Flag from 'react-world-flags'; 
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
