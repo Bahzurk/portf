@@ -56,7 +56,8 @@
           "project3": "Проект 3",
           "project3Description": "Описание для проекта 3",
           "project4": "Проект 4",
-          "project4Description": "Описание для проекта 4"
+          "project4Description": "Описание для проекта 4",
+          "buttonText": "Отправьте мне сообщение"
     },
 
     "navbar": {

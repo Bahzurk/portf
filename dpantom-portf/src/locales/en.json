@@ -56,7 +56,8 @@
         "project3": "Project 3",
         "project3Description": "Description for project 3",
         "project4": "Project 4",
-        "project4Description": "Description for project 4"
+        "project4Description": "Description for project 4",
+        "buttonText": "Contact Me"
     },   
 
     "navbar": {

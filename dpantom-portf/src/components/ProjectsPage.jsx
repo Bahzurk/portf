@@ -1,6 +1,8 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import { Box, Grid, Card, CardContent, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next'; // Importing the useTranslation hook
+import { useTranslation } from 'react-i18next'; 
 
 const projects = [
   {
@@ -23,16 +25,15 @@ const projects = [
     description: 'projects.project4Description',
     link: '/projects/project-4',
   },
-  // Add more projects here
 ];
 
 function ProjectsPage() {
-  const { t } = useTranslation();  // Initialize the translation hook
+  const { t } = useTranslation(); 
 
   return (
     <Box sx={{ p: 3 }}>
       <Typography variant="h3" gutterBottom align="center">
-        {t('projects.title')}  {/* Translated page title */}
+        {t('projects.title')} {/* Translated page title */}
       </Typography>
       <Grid container spacing={4}>
         {projects.length > 0 ? (
@@ -41,19 +42,19 @@ function ProjectsPage() {
               <Card sx={{ height: '100%' }}>
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
-                    {t(project.title)}  {/* Translated project title */}
+                    {t(project.title)} {/* Translated project title */}
                   </Typography>
                   <Typography variant="body2" paragraph>
-                    {t(project.description)}  {/* Translated project description */}
+                    {t(project.description)} {/* Translated project description */}
                   </Typography>
                   <Button
                     variant="contained"
                     color="primary"
                     component={Link}
                     to={project.link}
-                    fullWidth // Optional: makes button fill entire width of card
+                    fullWidth
                   >
-                    {t('projects.viewProject')}  {/* Translated button text */}
+                    {t('projects.viewProject')} {/* Translated button text */}
                   </Button>
                 </CardContent>
               </Card>
@@ -61,10 +62,23 @@ function ProjectsPage() {
           ))
         ) : (
           <Typography variant="h6" color="textSecondary" align="center" fullWidth>
-            {t('projects.noProjects')}  {/* Translated text for no projects */}
+            {t('projects.noProjects')} {/* Translated text for no projects */}
           </Typography>
         )}
       </Grid>
+      {/* Add Contact Me Button */}
+      <Box sx={{ mt: 4, textAlign: 'center' }}>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          component={Link} 
+          to="/contact" 
+          size="large"
+          sx={{ mt: 3 }}
+        >
+          {t('projects.buttonText')} {/* Translated 'Contact Me' button text */}
+        </Button>
+      </Box>
     </Box>
   );
 }
