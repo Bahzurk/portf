@@ -57,7 +57,17 @@
         "project3Description": "Description for project 3",
         "project4": "Project 4",
         "project4Description": "Description for project 4",
-        "buttonText": "Contact Me"
+        "buttonText": "Contact Me",
+
+        "project1Title": "Project 1 Detailed Page",
+        "project1DescriptionFull": "This is a more detailed description for Project 1, explaining its features, functionality, and impact.",
+        "project2Title": "Project 2 Detailed Page",
+        "project2DescriptionFull": "This is a more detailed description for Project 2, outlining the project's goals, challenges, and solutions.",
+        "project3Title": "Project 3 Detailed Page",
+        "project3DescriptionFull": "This is a more detailed description for Project 3, including insights on its development and outcomes.",
+        "project4Title": "Project 4 Detailed Page",
+        "project4DescriptionFull": "This is a more detailed description for Project 4, sharing its significance and how it was created.",
+        "backToProjects": "Back to Projects"
     },   
 
     "navbar": {
