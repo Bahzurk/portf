@@ -13,9 +13,10 @@
         "tools": {
             "react": " React",
             "materialUI": " Material UI",
-            "modernTech": " modern web technologies"
+            "materialFiller" : " and ",
+            "modernTech": "modern web technologies"
         },
-        "expertise": "With a strong background in",
+        "expertise": " With a strong background in",
         "field": " UX/UI design",
         "education": {
         "school": " from Miami University",

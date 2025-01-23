@@ -23,7 +23,8 @@ function AboutPage() {
             <strong>{t('about.role')}</strong> {/* Translated job role */}
             {t('about.technologies')}
             <strong>{t('about.tools.react')}</strong>, 
-            <strong>{t('about.tools.materialUI')}</strong>, 
+            <strong>{t('about.tools.materialUI')}</strong>,
+            {t('about.tools.materialFiller')} 
             <strong>{t('about.tools.modernTech')}</strong>.
             {t('about.expertise')}
             <strong>{t('about.field')}</strong>
