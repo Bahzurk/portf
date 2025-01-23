@@ -12,15 +12,15 @@ function ContactPage() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_yv7zqfn', 'template_4ta2sck', form.current, 'DZsiZXKoNPkuNDxmq')
+      .sendForm('service_yv7zqfn', 'template_je2bqrm', form.current, 'DZsiZXKoNPkuNDxmq')
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
-          alert(t('contact.successMessage')); // Translated success message
+          alert(t('Success / Удача')); // Translated success message
         },
         (error) => {
           console.error('FAILED...', error.text);
-          alert(t('contact.errorMessage')); // Translated error message
+          alert(t('Failed / Неудача')); // Translated error message
         }
       );
   };
