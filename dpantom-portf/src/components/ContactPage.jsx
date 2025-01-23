@@ -12,7 +12,12 @@ function ContactPage() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_yv7zqfn', 'template_je2bqrm', form.current, 'DZsiZXKoNPkuNDxmq')
+      .sendForm(
+        import.meta.env.VITE_EMAIL_SERVICE_ID, // Use the env variable for the service ID
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID, // Use the env variable for the template ID
+        form.current, 
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY  // Use the env variable for the public key
+      )
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
