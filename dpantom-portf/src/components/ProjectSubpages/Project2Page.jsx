@@ -1,26 +1,42 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import { Box, Typography, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { Box, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Project2Page() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   return (
     <Box sx={{ p: 3 }}>
-      <Typography variant="h3" gutterBottom>
-        {t('projects.project2Title')} {/* Translated project title */}
+      <Typography variant="h3" gutterBottom align="center">
+        {t("projects.project2Title")} {/* Translated project title */}
       </Typography>
       <Typography variant="body1" paragraph>
-        {t('projects.project2Description')} {/* Translated project description */}
+        {t("projects.project2DescriptionFull")}{" "}
+        {/* Translated project description */}
       </Typography>
-      
-      {/* Add more content related to Project 2 here */}
 
-      <Button variant="contained" color="primary" component={Link} to="/projects">
-        {t('projects.backToProjects')} {/* Translated text for back button */}
-      </Button>
+      <Box sx={{ textAlign: "center", mt: 4 }}>
+        <iframe
+          src="/Project2Files/FinalReport.pdf"
+          width="100%"
+          height="600px"
+          style={{ border: "none" }}
+          title="Project 2 PDF"
+        ></iframe>
+      </Box>
+
+      <Box sx={{ textAlign: "center", mt: 3 }}>
+        <Button
+          variant="contained"
+          color="primary"
+          component={Link}
+          to="/projects"
+        >
+          {t("projects.backToProjects")} {/* Translated text for back button */}
+        </Button>
+      </Box>
     </Box>
   );
 }

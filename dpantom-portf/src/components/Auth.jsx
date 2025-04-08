@@ -2,7 +2,14 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { auth } from "../../firebase"; // Path to firebase.js
-import { Container, TextField, Button, Typography, Box, Alert } from '@mui/material'; // Import MUI components
+import {
+  Container,
+  TextField,
+  Button,
+  Typography,
+  Box,
+  Alert,
+} from "@mui/material"; // Import MUI components
 
 const Auth = () => {
   const [passwordInput, setPasswordInput] = useState(""); // Track the first password input
@@ -68,25 +75,25 @@ const Auth = () => {
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
             padding: 3,
             borderRadius: 1,
             boxShadow: 3,
-            backgroundColor: 'transparent',
-            color: 'white',
+            backgroundColor: "transparent",
+            color: "white",
           }}
         >
-          <Typography variant="h5" gutterBottom sx={{ color: 'white' }}>
+          <Typography variant="h5" gutterBottom sx={{ color: "white" }}>
             Enter First Password to Access Admin Login:
           </Typography>
           {errorMessage && (
-            <Alert severity="error" sx={{ width: '100%', mb: 2 }}>
+            <Alert severity="error" sx={{ width: "100%", mb: 2 }}>
               {errorMessage}
             </Alert>
           )}
-          <form onSubmit={handleFirstPasswordSubmit} style={{ width: '100%' }}>
+          <form onSubmit={handleFirstPasswordSubmit} style={{ width: "100%" }}>
             <TextField
               variant="outlined"
               label="First Password"
@@ -97,15 +104,23 @@ const Auth = () => {
               required
               sx={{
                 mb: 2,
-                '& .MuiInputLabel-root': { color: 'white' },
-                '& .MuiOutlinedInput-root': {
-                  '& fieldset': { borderColor: 'white' },
-                  '&.Mui-focused fieldset': { borderColor: 'white' },
-                  color: 'white',
+                "& .MuiInputLabel-root": { color: "white" },
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": { borderColor: "white" },
+                  "&.Mui-focused fieldset": { borderColor: "white" },
+                  color: "white",
                 },
               }}
             />
-            <Button type="submit" fullWidth variant="contained" sx={{ backgroundColor: '#1976d2', '&:hover': { backgroundColor: '#115293' } }}>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              sx={{
+                backgroundColor: "#1976d2",
+                "&:hover": { backgroundColor: "#115293" },
+              }}
+            >
               Unlock Admin Login
             </Button>
           </form>
@@ -119,24 +134,24 @@ const Auth = () => {
     <Container component="main" maxWidth="xs">
       <Box
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
           padding: 3,
           borderRadius: 1,
           boxShadow: 3,
-          backgroundColor: 'transparent',
+          backgroundColor: "transparent",
         }}
       >
-        <Typography variant="h5" gutterBottom sx={{ color: 'white' }}>
+        <Typography variant="h5" gutterBottom sx={{ color: "white" }}>
           Admin Login
         </Typography>
         {errorMessage && (
-          <Alert severity="error" sx={{ width: '100%', mb: 2 }}>
+          <Alert severity="error" sx={{ width: "100%", mb: 2 }}>
             {errorMessage}
           </Alert>
         )}
-        <form onSubmit={handleFirebaseLoginSubmit} style={{ width: '100%' }}>
+        <form onSubmit={handleFirebaseLoginSubmit} style={{ width: "100%" }}>
           <TextField
             variant="outlined"
             label="Email"
@@ -147,11 +162,11 @@ const Auth = () => {
             required
             sx={{
               mb: 2,
-              '& .MuiInputLabel-root': { color: 'white' },
-              '& .MuiOutlinedInput-root': {
-                '& fieldset': { borderColor: 'white' },
-                '&.Mui-focused fieldset': { borderColor: 'white' },
-                color: 'white',
+              "& .MuiInputLabel-root": { color: "white" },
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": { borderColor: "white" },
+                "&.Mui-focused fieldset": { borderColor: "white" },
+                color: "white",
               },
             }}
           />
@@ -165,27 +180,39 @@ const Auth = () => {
             required
             sx={{
               mb: 2,
-              '& .MuiInputLabel-root': { color: 'white' },
-              '& .MuiOutlinedInput-root': {
-                '& fieldset': { borderColor: 'white' },
-                '&.Mui-focused fieldset': { borderColor: 'white' },
-                color: 'white',
+              "& .MuiInputLabel-root": { color: "white" },
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": { borderColor: "white" },
+                "&.Mui-focused fieldset": { borderColor: "white" },
+                color: "white",
               },
             }}
           />
-          <Button type="submit" fullWidth variant="contained" sx={{ backgroundColor: '#1976d2', '&:hover': { backgroundColor: '#115293' } }}>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            sx={{
+              backgroundColor: "#1976d2",
+              "&:hover": { backgroundColor: "#115293" },
+            }}
+          >
             Sign In
           </Button>
         </form>
 
         {isAdmin && (
           <>
-            <Typography variant="body1" sx={{ color: 'white', mt: 2 }}>
+            <Typography variant="body1" sx={{ color: "white", mt: 2 }}>
               You are now in Admin Mode
             </Typography>
             <Button
               variant="contained"
-              sx={{ backgroundColor: '#d32f2f', '&:hover': { backgroundColor: '#9a0007' }, mt: 2 }}
+              sx={{
+                backgroundColor: "#d32f2f",
+                "&:hover": { backgroundColor: "#9a0007" },
+                mt: 2,
+              }}
               onClick={handleLogout}
             >
               Logout

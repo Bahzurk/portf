@@ -1,91 +1,89 @@
 {
-    "homepage": {
-      "welcome": "Welcome to My Portfolio",
-      "description": "I'm a passionate developer showcasing my work. Explore my projects and learn more about me.",
-      "learnMore": "Learn More About Me"
+  "homepage": {
+    "welcome": "Welcome to My Portfolio",
+    "description": "I'm a passionate developer showcasing my work. Explore my projects and learn more about me.",
+    "learnMore": "Learn More About Me"
+  },
+
+  "about": {
+    "title": "About Me",
+    "intro": "I’m a",
+    "role": " front-end developer",
+    "technologies": "passionate about creating responsive, user-friendly websites using",
+    "tools": {
+      "react": " React",
+      "materialUI": " Material UI",
+      "materialFiller": " and ",
+      "modernTech": "modern web technologies"
     },
-
-    "about": {
-        "title": "About Me",
-        "intro": "I’m a",
-        "role": " front-end developer",
-        "technologies": "passionate about creating responsive, user-friendly websites using",
-        "tools": {
-            "react": " React",
-            "materialUI": " Material UI",
-            "materialFiller" : " and ",
-            "modernTech": "modern web technologies"
-        },
-        "expertise": " With a strong background in",
-        "field": " UX/UI design",
-        "education": {
-        "school": " from Miami University",
-        "focus": "I focus on building seamless, intuitive experiences that prioritize both functionality and design."
-        },
-        "languages": {
-            "currentFocus": "Currently, I’m focused on front-end development but am eager to expand into",
-            "futureGoals": " IT and Cybersecurity",
-            "languageSkills": ". I’m also working to improve my Russian, which I see as a valuable asset for future global opportunities."
-        },
-        "cta": {
-            "buttonText": "View My Projects"
-        }
-    },   
-      
-    "contact": {
-      "title": "Contact Me",
-      "nameLabel": "Your Name",
-      "emailLabel": "Your Email",
-      "messageLabel": "Your Message",
-      "buttonText": "Send Message"
+    "expertise": " With a strong background in",
+    "field": " UX/UI design",
+    "education": {
+      "school": " from Miami University",
+      "focus": "I focus on building seamless, intuitive experiences that prioritize both functionality and design."
     },
-
-    "notFound": {
-      "title": "404 - Page Not Found",
-      "message": "The page you're looking for does not exist.",
-      "returnHome": "Go to Home"
+    "languages": {
+      "currentFocus": "Currently, I’m focused on front-end development but am eager to expand into",
+      "futureGoals": " IT and Cybersecurity",
+      "languageSkills": ". I’m also working to improve my Russian, which I see as a valuable asset for future global opportunities."
     },
-
-    "projects": {
-        "title": "My Projects",
-        "viewProject": "View Project",
-        "noProjects": "No projects available.",
-        "project1": "Health App",
-        "project1Description": "Helping college students build healthy habits through food, fitness, and friends.",
-        "project2": "Project 2",
-        "project2Description": "Description for project 2",
-        "project3": "Project 3",
-        "project3Description": "Description for project 3",
-        "project4": "Project 4",
-        "project4Description": "Description for project 4",
-        "project5": "Project 5",
-        "project5Description": "Description for project 5",
-        "project6": "Project 6",
-        "project6Description": "Description for project 6",
-        "buttonText": "Contact Me",
-
-        "project1Title": "CampusFit",
-        "project1DescriptionFull": "A wellness app designed to help college students develop healthier habits through personalized meal and workout plans, social sharing, and motivational progress tracking. Based on user interviews, I identified key challenges like poor time management, lack of cooking knowledge, and low fitness motivation. My research-driven design focuses on simplicity, positive reinforcement, and visual feedback to encourage daily engagement. Inspired by apps like BeReal and Strava, it turns health into a social, structured, and rewarding experience.",
-        "project2Title": "Project 2 Detailed Page",
-        "project2DescriptionFull": "This is a more detailed description for Project 2, outlining the project's goals, challenges, and solutions.",
-        "project3Title": "Project 3 Detailed Page",
-        "project3DescriptionFull": "This is a more detailed description for Project 3, including insights on its development and outcomes.",
-        "project4Title": "Project 4 Detailed Page",
-        "project4DescriptionFull": "This is a more detailed description for Project 4, sharing its significance and how it was created.",
-        "project5Title": "Project 5 Detailed Page",
-        "project5DescriptionFull": "This is a more detailed description for Project 5, including insights on its development and outcomes.",
-        "project6Title": "Project 6 Detailed Page",
-        "project6DescriptionFull": "This is a more detailed description for Project 6, sharing its significance and how it was created.",
-        "backToProjects": "Back to Projects"
-    },   
-
-    "navbar": {
-        "title": "Michael Szurko",
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact"
+    "cta": {
+      "buttonText": "View My Projects"
     }
-      
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your Email",
+    "messageLabel": "Your Message",
+    "buttonText": "Send Message"
+  },
+
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "message": "The page you're looking for does not exist.",
+    "returnHome": "Go to Home"
+  },
+
+  "projects": {
+    "title": "My Projects",
+    "viewProject": "View Project",
+    "noProjects": "No projects available.",
+    "project1": "Health App",
+    "project1Description": "Helping college students build healthy habits through food, fitness, and friends.",
+    "project2": "Social Media Marketing",
+    "project2Description": "Data-driven analysis to boost community engagement and support local businesses for a non-profit organization.",
+    "project3": "Project 3",
+    "project3Description": "Description for project 3",
+    "project4": "Project 4",
+    "project4Description": "Description for project 4",
+    "project5": "Project 5",
+    "project5Description": "Description for project 5",
+    "project6": "Project 6",
+    "project6Description": "Description for project 6",
+    "buttonText": "Contact Me",
+
+    "project1Title": "CampusFit",
+    "project1DescriptionFull": "A wellness app designed to help college students develop healthier habits through personalized meal and workout plans, social sharing, and motivational progress tracking. Based on user interviews, I identified key challenges like poor time management, lack of cooking knowledge, and low fitness motivation. My research-driven design focuses on simplicity, positive reinforcement, and visual feedback to encourage daily engagement. Inspired by apps like BeReal and Strava, it turns health into a social, structured, and rewarding experience.",
+    "project2Title": "Enjoy Oxford",
+    "project2DescriptionFull": "This project aimed to enhance the social media presence of Enjoy Oxford, a non-profit promoting community engagement in Oxford, Ohio. Through an analysis of 30 social media posts across platforms like Instagram, Facebook, TikTok, and Pinterest, I identified trends in content performance, audience engagement, and platform strengths. My research showed that Instagram, especially Reels, outperformed Facebook in reaching key audiences such as college students, families, and residents. I recommended reallocating resources to short-form video content on TikTok and Instagram to capitalize on viral potential and high engagement. Additionally, I suggested deactivating inactive platforms like Twitter for a more focused presence. To foster local business growth and community building, I proposed creating content around “uptown” events and establishments, showcasing Oxford’s culture and boosting local pride. The strategy is built around a messaging framework that promotes curiosity, belonging, and participation, making social media a key tool for community connection.",
+    "project3Title": "Project 3 Detailed Page",
+    "project3DescriptionFull": "This is a more detailed description for Project 3, including insights on its development and outcomes.",
+    "project4Title": "Project 4 Detailed Page",
+    "project4DescriptionFull": "This is a more detailed description for Project 4, sharing its significance and how it was created.",
+    "project5Title": "Project 5 Detailed Page",
+    "project5DescriptionFull": "This is a more detailed description for Project 5, including insights on its development and outcomes.",
+    "project6Title": "Project 6 Detailed Page",
+    "project6DescriptionFull": "This is a more detailed description for Project 6, sharing its significance and how it was created.",
+    "backToProjects": "Back to Projects"
+  },
+
+  "navbar": {
+    "title": "Michael Szurko",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
 }
-  
