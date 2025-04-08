@@ -1,5 +1,3 @@
-// src/components/projectSubpages/Project1Page.jsx
-
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
@@ -15,8 +13,21 @@ function Project1Page() {
         {t('projects.project1Title')} {/* Translated project title */}
       </Typography>
       <Typography variant="body1" paragraph>
-        {t('projects.project1Description')} {/* Translated project description */}
+        {t('projects.project1DescriptionFull')} {/* Translated project description */}
       </Typography>
+
+      {/* PDF Embed Section */}
+      <Box sx={{ textAlign: 'center', mt: 4 }}>
+        <iframe 
+          src="/Project1Files/DesignBrief.pdf" 
+          width="100%" 
+          height="600px" 
+          style={{ border: 'none' }}
+          title="Project 1 PDF"
+        ></iframe>
+      </Box>
+
+      {/* Back to Projects Button */}
       <Box sx={{ textAlign: 'center', mt: 3 }}>
         <Button 
           variant="contained" 
