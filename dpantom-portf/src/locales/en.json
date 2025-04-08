@@ -58,6 +58,10 @@
         "project3Description": "Description for project 3",
         "project4": "Project 4",
         "project4Description": "Description for project 4",
+        "project5": "Project 5",
+        "project5Description": "Description for project 5",
+        "project6": "Project 6",
+        "project6Description": "Description for project 6",
         "buttonText": "Contact Me",
 
         "project1Title": "Project 1 Detailed Page",
@@ -68,6 +72,10 @@
         "project3DescriptionFull": "This is a more detailed description for Project 3, including insights on its development and outcomes.",
         "project4Title": "Project 4 Detailed Page",
         "project4DescriptionFull": "This is a more detailed description for Project 4, sharing its significance and how it was created.",
+        "project5Title": "Project 5 Detailed Page",
+        "project5DescriptionFull": "This is a more detailed description for Project 5, including insights on its development and outcomes.",
+        "project6Title": "Project 6 Detailed Page",
+        "project6DescriptionFull": "This is a more detailed description for Project 6, sharing its significance and how it was created.",
         "backToProjects": "Back to Projects"
     },   
 

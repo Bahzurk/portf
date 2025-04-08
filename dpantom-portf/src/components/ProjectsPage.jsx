@@ -25,6 +25,16 @@ const projects = [
     description: 'projects.project4Description',
     link: '/projects/project-4',
   },
+  {
+    title: 'projects.project5',
+    description: 'projects.project5Description',
+    link: '/projects/project-5',
+  },
+  {
+    title: 'projects.project6',
+    description: 'projects.project6Description',
+    link: '/projects/project-6',
+  },
 ];
 
 function ProjectsPage() {
