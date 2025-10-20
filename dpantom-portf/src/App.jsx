@@ -12,7 +12,7 @@ import Project4Page from './components/ProjectSubpages/Project4Page';
 import Project5Page from './components/ProjectSubpages/Project5Page';
 import Project6Page from './components/ProjectSubpages/Project6Page';
 import NotFound from './components/NotFound';
-import Auth from './components/Auth';
+//import Auth from './components/Auth';
 
 function App() {
   return (
@@ -34,7 +34,6 @@ function App() {
             <Route path="/projects/project-5" element={<Project5Page />} />
             <Route path="/projects/project-6" element={<Project6Page />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/auth" element={<Auth />} /> {/* Route for Auth page */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

@@ -1,12 +1,16 @@
 {
   "hosting": {
-    "public": "dist", 
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
-        "source": "/**",
+        "source": "**",
         "destination": "/index.html"
       }
-    ],
-    "errorPage": "404.html"
+    ]
   }
 }

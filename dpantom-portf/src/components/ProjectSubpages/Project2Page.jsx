@@ -21,7 +21,7 @@ function Project2Page() {
         <iframe
           src="/Project2Files/FinalReport.pdf"
           width="100%"
-          height="600px"
+          height="900px"
           style={{ border: "none" }}
           title="Project 2 PDF"
         ></iframe>
