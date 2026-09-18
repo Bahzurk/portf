@@ -7,9 +7,9 @@ import SkillsSection from "./SkillsSection";
 
 // Edit these to your actual featured projects
 const FEATURED_PROJECTS = [
-  { title: "Project 1", description: "Short one-line description.", to: "/projects/project-1" },
-  { title: "Project 2", description: "Short one-line description.", to: "/projects/project-2" },
-  { title: "Project 3", description: "Short one-line description.", to: "/projects/project-3" },
+  { title: "projects.project1", description: "projects.project1Description", to: "/projects/project-1" },
+  { title: "projects.project2", description: "projects.project2Description", to: "/projects/project-2" },
+  { title: "projects.project3", description: "projects.project3Description", to: "/projects/project-3" },
 ];
 
 function HomePage() {
@@ -55,10 +55,11 @@ function HomePage() {
                 <CardActionArea component={Link} to={project.to}>
                   <CardContent>
                     <Typography variant="h6" component="h3" gutterBottom>
-                      {project.title}
+                      {t(project.title)} {/* Translated project title */}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      {project.description}
+                      {t(project.description)}{" "}
+                    {/* Translated project description */}
                     </Typography>
                   </CardContent>
                 </CardActionArea>
