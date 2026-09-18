@@ -35,4 +35,11 @@ export default [
       ],
     },
   },
+  {
+  files: ['src/components/TechBall.jsx', 'src/components/SkillsSection.jsx'],
+    rules: {
+      'react/no-unknown-property': 'off',
+      'react/prop-types': 'off',
+    },
+  },
 ]
